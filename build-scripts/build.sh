@@ -66,7 +66,7 @@ echo "::endgroup::"
 echo "::group::Build packages"
 
 # Build packages
-makepkg -sf --needed --noconfirm
+makepkg -sfA --skippgpcheck --needed --noconfirm
 
 echo "::endgroup::"
 
