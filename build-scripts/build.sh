@@ -52,7 +52,7 @@ echo "::group::Install build dependencies"
 	# Run "source PKGBUILD" in a subshell
 	source PKGBUILD
 	# Install build dependencies with yay
-	yay -S ${makedepends[*]} --needed --noconfirm --mflags "--nocheck --skippgpcheck"
+	yay -S ${makedepends[*]} ${depends[*]} --needed --noconfirm --mflags "--nocheck --skippgpcheck"
 )
 
 # Install extra build dependencies
